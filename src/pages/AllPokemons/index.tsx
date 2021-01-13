@@ -50,7 +50,7 @@ const AllPokemons: React.FC = () => {
         <HeaderTitle>All Pokemon</HeaderTitle>
       </Header>
       <FullPageList
-        pokemons={pokemons}
+        list={pokemons}
         loading={loading}
         onEndReached={handleUpdate}
         onPressItem={navigateToPokemon}

@@ -8,8 +8,8 @@ import {
   FooterText,
 } from './styles';
 
-interface ListProps<T> {
-  pokemons: T;
+interface ListProps {
+  list: any[];
   loading: boolean;
   onEndReached: () => void | undefined;
   onPressItem: (
@@ -19,15 +19,15 @@ interface ListProps<T> {
   ) => void;
 }
 
-const FullPageList: React.FC<ListProps<any[]>> = ({
-  pokemons,
+const FullPageList: React.FC<ListProps> = ({
+  list,
   onEndReached,
   loading = false,
   onPressItem,
-}: ListProps<any[]>) => {
+}: ListProps) => {
   return (
     <FlatList
-      data={pokemons}
+      data={list}
       keyExtractor={({ name }) => name}
       renderItem={({ item: { name, url } }) => (
         <FullPageListItem name={name} url={url} onPressItem={onPressItem} />
