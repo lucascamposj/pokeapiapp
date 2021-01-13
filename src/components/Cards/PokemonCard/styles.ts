@@ -102,11 +102,11 @@ interface HeaderProps {
 export const Header = styled.View<HeaderProps>`
   padding: 24px;
   padding-top: ${getStatusBarHeight() + 24}px;
-  background-color: ${({ color }) => color || '#FFF'};
+  background-color: ${({ color, theme }) => color || theme.colors.common.white};
   height: 170px;
   z-index: 998;
   align-items: flex-start;
-  shadow-color: ${({ color }) => color || '#FFF'};
+  shadow-color: ${({ color, theme }) => color || theme.colors.common.white};
   shadow-offset: 0 10px;
   shadow-opacity: 0.9;
   shadow-radius: 18px;
@@ -120,7 +120,7 @@ export const HeaderBar = styled.View`
 `;
 
 export const HeaderTitle = styled.Text`
-  color: #f4ede8;
+  color: ${({ theme }) => theme.colors.primary.contrastText};
   font-size: 24px;
   font-weight: bold;
   font-family: 'RobotoMono-Regular';

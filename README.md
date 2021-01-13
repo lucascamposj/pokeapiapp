@@ -5,6 +5,9 @@ Projeto simples feito em React-Native com Typescript, consumindo a [PokéAPI](ht
 ## Design do app
 
 Principal inspiração e fonte de alguns ícones do projeto foram os trabalhos do [Daniel Motta](https://dribbble.com/DanielMots), em especial o seu design da [Pokedex App Resouce](https://www.sketchappsources.com/free-source/3989-pokedex-app-sketch-freebie-resource.html).
+
+Neste projeto foi utilizado styled-components. Nos arquivos ./styled.d.ts e scr/theme.ts é possível se configurar o tema do aplicativo utilizando o ThemeProvider do styled-components.
+
 ## Configurando o ambiente
 
 Para iniciar o projeto sugere-se a leitura desta página da Rocketseat para configuração do seu ambiente de desenvolvimento de acordo com o seu sistema operacional: [Docs da Rocketseat sobre React Native](https://react-native.rocketseat.dev)

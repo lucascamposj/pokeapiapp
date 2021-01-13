@@ -1,10 +1,9 @@
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
   padding: 15px 0;
   border-bottom-width: 1px;
-  border-bottom-color: #bbb;
+  border-bottom-color: ${({ theme }) => theme.colors.common.gray};
 `;
 
 export const ItemText = styled.Text`
