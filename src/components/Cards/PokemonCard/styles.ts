@@ -99,6 +99,7 @@ export const Forms = styled.View``;
 interface HeaderProps {
   color: string;
 }
+
 export const Header = styled.View<HeaderProps>`
   padding: 24px;
   padding-top: ${getStatusBarHeight() + 24}px;

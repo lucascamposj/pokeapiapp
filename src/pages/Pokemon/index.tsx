@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ActivityIndicator } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
-import BackIcon from '../../assets/svg/icons/angle-left.svg';
 import api from '../../services/api';
 
-import { Container, Header, HeaderTitle, BackButton } from './styles';
+import { Container } from './styles';
 import PokemonCard from '../../components/Cards/PokemonCard';
 
 export interface NamedInterface {

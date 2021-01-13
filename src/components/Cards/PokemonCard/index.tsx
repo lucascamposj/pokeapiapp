@@ -57,7 +57,9 @@ const PokemonCard: React.FC<PokemonCardProps> = ({
   loading,
   backButtonCallback,
 }: PokemonCardProps) => {
-  const mainColor = useMemo(() => getPokemonFirstType(pokemon), [pokemon]);
+  const mainColor = useMemo(() => pokemon && getPokemonFirstType(pokemon), [
+    pokemon,
+  ]);
 
   return (
     <>
@@ -65,7 +67,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({
         <ActivityIndicator size="large" style={{ flex: 1 }} color="red" />
       ) : (
         <>
-          <Header color={loading ? '#FFF' : mainColor}>
+          <Header color={!loading && mainColor ? mainColor : '#FFF'}>
             <HeaderBar>
               <BackButton onPress={backButtonCallback}>
                 <BackIcon height={30} width={30} color="#FFF" />

@@ -1,9 +1,9 @@
 import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
-import { PokemonListItem } from './AllPokemonsListItem';
+import { ListItemProps } from './FullPageListItem';
 
 export const FlatListStyled = styled(
-  FlatList as new () => FlatList<PokemonListItem>,
+  FlatList as new () => FlatList<ListItemProps>,
 )`
   padding: 16px 24px 16px;
 `;
