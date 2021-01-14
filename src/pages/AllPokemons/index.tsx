@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { GestureResponderEvent } from 'react-native';
+import { GestureResponderEvent, Alert } from 'react-native';
 import { Container, Header, HeaderTitle } from './styles';
 import FullPageList from '../../components/Lists/FullPageList';
 import api from '../../services/api';
@@ -23,7 +23,7 @@ const AllPokemons: React.FC = () => {
         setNextUrl(next);
       })
       .catch((err) => {
-        // console.log(err);
+        Alert.alert('Falha ao carregar pokemons', 'Tente novamente!');
       });
   }, [setPokemons, setNextUrl, currentUrl]);
 

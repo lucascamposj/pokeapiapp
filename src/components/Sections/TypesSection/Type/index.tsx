@@ -6,8 +6,7 @@ import { TypeInterface } from '../../../../pages/Pokemon';
 const Type: React.FC<TypeInterface> = ({ type }: TypeInterface) => {
   const { name } = type;
   const source = TypesObject[name]?.image;
-  console.log(name);
-  console.log(source);
+
   return (
     <>
       {source && (
