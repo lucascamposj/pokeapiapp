@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
-
+import { Alert } from 'react-native';
 import api from '../../services/api';
 
 import { Container } from './styles';
@@ -75,10 +75,14 @@ const AllPokemons: React.FC = () => {
       .then((response) => {
         setPokemon(response.data);
       })
+      .catch(() => {
+        Alert.alert('Falha ao carregar pokemon', 'Tente novamente!');
+        goBack();
+      })
       .finally(() => {
         setLoading(false);
       });
-  }, [setPokemon, selectedPokemon.url, setLoading]);
+  }, [setPokemon, selectedPokemon.url, setLoading, goBack]);
 
   return (
     <Container>
