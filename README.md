@@ -71,7 +71,7 @@ Os componentes criados na pasta src/components possuem uma pasta /tests com as r
 
 ### `yarn test`
 
-Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de análise da cobertura de testes do código.
+Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de relatório da cobertura de testes do projeto, em especial o arquivo ./coverage/lcov-report/index.html que disponibiliza uma interface visual para análise da cobertura de testes.
 
 ### `yarn test -u`
 
