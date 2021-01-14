@@ -5,7 +5,7 @@
 
 Projeto simples feito em [React Native](https://reactnative.dev) com [Typescript](https://www.typescriptlang.org), consumindo a [PokéAPI](https://pokeapi.com)
 
-![screenshots](https://user-images.githubusercontent.com/22333534/104534782-afd02600-55f3-11eb-8037-72c3b6a89105.png)
+![screenshots](https://user-images.githubusercontent.com/22333534/104552804-3d257180-5618-11eb-9bba-2987c68b9f11.png)
 
 ## Design do app
 
