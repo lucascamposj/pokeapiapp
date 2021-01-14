@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatsSection Rendering should match to snapshot 1`] = `
+<Styled(View)>
+  <Stat
+    key="HP"
+    stat={
+      Object {
+        "base_stat": 450,
+        "effort": 0,
+        "name": "HP",
+      }
+    }
+  />
+  <Stat
+    key="ATTACK"
+    stat={
+      Object {
+        "base_stat": 490,
+        "effort": 2,
+        "name": "ATTACK",
+      }
+    }
+  />
+</Styled(View)>
+`;

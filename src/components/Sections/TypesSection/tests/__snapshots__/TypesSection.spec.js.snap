@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypesSection Rendering should match to snapshot 1`] = `
+<Styled(View)>
+  <Type
+    key="Overgrow"
+    type={
+      Object {
+        "name": "Overgrow",
+      }
+    }
+  />
+  <Type
+    key="Chlorophyll"
+    type={
+      Object {
+        "name": "Chlorophyll",
+      }
+    }
+  />
+</Styled(View)>
+`;

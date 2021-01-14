@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullPageListItem Rendering should match to snapshot 1`] = `
+<Styled(FlatList)
+  ListFooterComponent={
+    <Styled(View)>
+      <Styled(Text)>
+        Gotta catch them all!
+      </Styled(Text)>
+    </Styled(View)>
+  }
+  data={
+    Array [
+      Object {
+        "name": "Pikachu",
+        "url": "pikachu.com.br",
+      },
+      Object {
+        "name": "Bulbasaur",
+        "url": "bulbasaur.com.br",
+      },
+    ]
+  }
+  keyExtractor={[Function]}
+  onEndReached={[MockFunction]}
+  onEndReachedThreshold={0.9}
+  renderItem={[Function]}
+/>
+`;

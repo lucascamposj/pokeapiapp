@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormsSection Rendering should match to snapshot 1`] = `
+<Styled(View)>
+  <Form
+    key="Overgrow"
+    name="Overgrow"
+    url="url-test.com"
+  />
+  <Form
+    key="Chlorophyll"
+    name="Chlorophyll"
+    url="url-test.com"
+  />
+</Styled(View)>
+`;

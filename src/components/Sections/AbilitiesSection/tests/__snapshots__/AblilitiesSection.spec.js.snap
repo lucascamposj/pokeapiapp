@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbilitiesSection Rendering should match to snapshot 1`] = `
+<Styled(View)>
+  <Ability
+    ability={
+      Object {
+        "name": "Overgrow",
+      }
+    }
+    key="Overgrow"
+  />
+  <Ability
+    ability={
+      Object {
+        "name": "Chlorophyll",
+      }
+    }
+    key="Chlorophyll"
+  />
+</Styled(View)>
+`;
