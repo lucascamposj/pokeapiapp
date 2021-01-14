@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FullPageListItem Rendering should match to snapshot 1`] = `
+exports[`FullPageListItem Rendering should match to snapshot loaded 1`] = `
 <Styled(Component)
   onPress={[Function]}
 >

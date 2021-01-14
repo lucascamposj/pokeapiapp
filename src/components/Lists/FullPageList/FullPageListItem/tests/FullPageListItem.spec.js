@@ -4,11 +4,12 @@ import FullPageListItem from '../../FullPageListItem';
 
 describe('FullPageListItem', () => {
     describe('Rendering', () => {
-        it('should match to snapshot', () => {
+        it('should match to snapshot loaded', () => {
+            const mockPressItem = jest.fn();
             const component = shallow(
               <FullPageListItem
                 name={'Test nome'}
-                onPressItem={() => {}}
+                onPressItem={mockPressItem}
                 url="url-test.com"
               />)
             expect(component).toMatchSnapshot()

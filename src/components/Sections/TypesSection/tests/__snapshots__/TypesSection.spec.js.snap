@@ -3,18 +3,22 @@
 exports[`TypesSection Rendering should match to snapshot 1`] = `
 <Styled(View)>
   <Type
-    key="Overgrow"
+    key="electric"
+    slot={3}
     type={
       Object {
-        "name": "Overgrow",
+        "name": "electric",
+        "url": "electric.com",
       }
     }
   />
   <Type
-    key="Chlorophyll"
+    key="poison"
+    slot={2}
     type={
       Object {
-        "name": "Chlorophyll",
+        "name": "poison",
+        "url": "electric.com",
       }
     }
   />

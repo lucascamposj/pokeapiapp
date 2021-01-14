@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
-import { ActivityIndicator } from 'react-native';
+import { ScrollView, ActivityIndicator } from 'react-native';
+
 import TypesObject from '../../Sections/TypesSection/Type/types';
 
 import BackIcon from '../../../assets/svg/icons/angle-left.svg';

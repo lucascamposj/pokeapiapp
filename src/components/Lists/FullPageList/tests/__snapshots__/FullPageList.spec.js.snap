@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullPageListItem Rendering should match to snapshot loaded 1`] = `
+<Styled(FlatList)
+  ListFooterComponent={
+    <Styled(View)>
+      <Styled(Text)>
+        Gotta catch them all!
+      </Styled(Text)>
+    </Styled(View)>
+  }
+  data={
+    Array [
+      Object {
+        "name": "Pikachu",
+        "url": "pikachu.com.br",
+      },
+      Object {
+        "name": "Bulbasaur",
+        "url": "bulbasaur.com.br",
+      },
+    ]
+  }
+  keyExtractor={[Function]}
+  onEndReached={[MockFunction]}
+  onEndReachedThreshold={0.9}
+  renderItem={[Function]}
+/>
+`;
+
+exports[`FullPageListItem Rendering should match to snapshot loading 1`] = `
+<Styled(FlatList)
+  ListFooterComponent={
+    <Styled(View)>
+      <ActivityIndicator
+        animating={true}
+        color="red"
+        hidesWhenStopped={true}
+        size="large"
+        style={
+          Object {
+            "flex": 1,
+            "marginTop": 20,
+          }
+        }
+      />
+    </Styled(View)>
+  }
+  data={
+    Array [
+      Object {
+        "name": "Pikachu",
+        "url": "pikachu.com.br",
+      },
+      Object {
+        "name": "Bulbasaur",
+        "url": "bulbasaur.com.br",
+      },
+    ]
+  }
+  keyExtractor={[Function]}
+  onEndReached={[MockFunction]}
+  onEndReachedThreshold={0.9}
+  renderItem={[Function]}
+/>
+`;

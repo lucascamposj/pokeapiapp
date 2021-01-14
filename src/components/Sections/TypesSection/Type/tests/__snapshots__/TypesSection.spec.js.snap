@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Type Rendering should match to snapshot 1`] = `
+<Fragment>
+  <Styled(View)>
+    <Styled(Image)
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../src/assets/images/pokemonTypes/electric.png",
+        }
+      }
+    />
+  </Styled(View)>
+</Fragment>
+`;

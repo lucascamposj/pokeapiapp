@@ -12,9 +12,9 @@ const TypeSection: React.FC<TypeSectionProps> = ({
 }: TypeSectionProps) => {
   return (
     <Container>
-      {types?.map(({ type, slot }) => (
-        <Type key={type.name} type={type} slot={slot} />
-      ))}
+      {types?.map(({ type, slot }) => {
+        return <Type key={type.name} type={type} slot={slot} />;
+      })}
     </Container>
   );
 };

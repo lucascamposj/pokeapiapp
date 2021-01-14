@@ -1,7 +1,8 @@
 
 {
 	"preset": "react-native",
-	"collectCoverage": true,
+  "collectCoverage": true,
+  "testEnvironment": "jsdom",
 	"moduleDirectories": [
 		"node_modules",
 		"src"
@@ -17,7 +18,15 @@
 	],
 	"coveragePathIgnorePatterns": [
 		"/node_modules/",
-		"/jest"
+    "/jest",
+    "assets",
+    "lib"
+  ],
+  "modulePathIgnorePatterns": [
+    "package",
+    "assets",
+    "lib"
   ],
   "snapshotSerializers": ["enzyme-to-json/serializer"]
 }
+

@@ -7,13 +7,17 @@ describe('TypesSection', () => {
         it('should match to snapshot', () => {
             const types = [
               {
+                slot: 3,
                 type: {
-                  name: "Overgrow"
+                  name: "electric",
+                  url: "electric.com"
                 }
               },
               {
+                slot: 2,
                 type: {
-                  name: "Chlorophyll"
+                  name: "poison",
+                  url: "electric.com"
                 }
               }
             ]
