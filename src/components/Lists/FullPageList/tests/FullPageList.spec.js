@@ -1,6 +1,15 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import {shallow, mount} from 'enzyme';
+import {ThemeProvider} from 'styled-components/native';
+import {defaultTheme} from '../../../../theme';
 import FullPageList from '../../FullPageList';
+import 'jest-styled-components';
+
+export function shallowWithTheme(child) {
+  return shallow(child, {
+      wrappingComponent: ({ children }) => <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>,
+  });
+}
 
 describe('FullPageListItem', () => {
     describe('Rendering', () => {
@@ -18,7 +27,7 @@ describe('FullPageListItem', () => {
             const mockEndReachedHandler = jest.fn();
             const mockPressItem = jest.fn();
 
-            const component = shallow(
+            const component = shallowWithTheme(
               <FullPageList
                 list={list}
                 loading={false}
@@ -42,7 +51,7 @@ describe('FullPageListItem', () => {
           const mockEndReachedHandler = jest.fn();
           const mockPressItem = jest.fn();
 
-          const component = shallow(
+          const component = shallowWithTheme(
             <FullPageList
               list={list}
               loading={true}
@@ -50,6 +59,29 @@ describe('FullPageListItem', () => {
               onPressItem={mockPressItem}
             />)
           expect(component).toMatchSnapshot()
-      });
+        });
+
+        it('should match to snapshot with loading prop undefined ', () => {
+          const list = [
+            {
+              name: "Pikachu",
+              url: "pikachu.com.br"
+            },
+            {
+              name: "Bulbasaur",
+              url: "bulbasaur.com.br"
+            }
+          ]
+          const mockEndReachedHandler = jest.fn();
+          const mockPressItem = jest.fn();
+
+          const component = shallowWithTheme(
+            <FullPageList
+              list={list}
+              onEndReached={mockEndReachedHandler}
+              onPressItem={mockPressItem}
+            />)
+          expect(component).toMatchSnapshot()
+        });
     });
 });

@@ -103,11 +103,11 @@ interface HeaderProps {
 export const Header = styled.View<HeaderProps>`
   padding: 24px;
   padding-top: ${getStatusBarHeight() + 24}px;
-  background-color: ${({ color, theme }) => color || theme.colors.common.white};
+  background-color: ${({ color }) => color};
   height: 170px;
   z-index: 998;
   align-items: flex-start;
-  shadow-color: ${({ color, theme }) => color || theme.colors.common.white};
+  shadow-color: ${({ color }) => color};
   shadow-offset: 0 10px;
   shadow-opacity: 0.9;
   shadow-radius: 18px;

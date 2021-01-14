@@ -29,9 +29,11 @@ const FullPageList: React.FC<ListProps> = ({
     <FlatList
       data={list}
       keyExtractor={({ name }) => name}
-      renderItem={({ item: { name, url } }) => (
-        <FullPageListItem name={name} url={url} onPressItem={onPressItem} />
-      )}
+      renderItem={({ item: { name, url } }) => {
+        return (
+          <FullPageListItem name={name} url={url} onPressItem={onPressItem} />
+        );
+      }}
       ListFooterComponent={
         <FooterContainer>
           {loading ? (

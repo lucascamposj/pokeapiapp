@@ -64,3 +64,31 @@ exports[`FullPageListItem Rendering should match to snapshot loading 1`] = `
   renderItem={[Function]}
 />
 `;
+
+exports[`FullPageListItem Rendering should match to snapshot with loading prop undefined  1`] = `
+<Styled(FlatList)
+  ListFooterComponent={
+    <Styled(View)>
+      <Styled(Text)>
+        Gotta catch them all!
+      </Styled(Text)>
+    </Styled(View)>
+  }
+  data={
+    Array [
+      Object {
+        "name": "Pikachu",
+        "url": "pikachu.com.br",
+      },
+      Object {
+        "name": "Bulbasaur",
+        "url": "bulbasaur.com.br",
+      },
+    ]
+  }
+  keyExtractor={[Function]}
+  onEndReached={[MockFunction]}
+  onEndReachedThreshold={0.9}
+  renderItem={[Function]}
+/>
+`;
