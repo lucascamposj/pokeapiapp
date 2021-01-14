@@ -27,6 +27,9 @@
     "assets",
     "lib"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"]
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "moduleNameMapper": {
+    "\\.svg": "<rootDir>/__mocks__/svgMock.js"
+  }
 }
 
