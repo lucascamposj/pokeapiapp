@@ -5,7 +5,7 @@
 
 Projeto simples feito em [React Native](https://reactnative.dev) com [Typescript](https://www.typescriptlang.org), consumindo a [PokéAPI](https://pokeapi.com)
 
-![screenshots](https://user-images.githubusercontent.com/22333534/104534782-afd02600-55f3-11eb-8037-72c3b6a89105.png)
+![screenshots](https://user-images.githubusercontent.com/22333534/104552804-3d257180-5618-11eb-9bba-2987c68b9f11.png)
 
 ## Design do app
 
@@ -71,7 +71,7 @@ Os componentes criados na pasta src/components possuem uma pasta /tests com as r
 
 ### `yarn test`
 
-Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de análise da cobertura de testes do código.
+Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de relatório da cobertura de testes do projeto, em especial o arquivo ./coverage/lcov-report/index.html que disponibiliza uma interface visual para análise da cobertura de testes.
 
 ### `yarn test -u`
 
