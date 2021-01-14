@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Alert } from 'react-native';
+import { useTheme } from 'styled-components/native';
 import api from '../../services/api';
 
 import { Container } from './styles';
@@ -61,6 +62,7 @@ interface RouteParams {
 const AllPokemons: React.FC = () => {
   const { goBack } = useNavigation();
   const route = useRoute();
+  const theme = useTheme();
   const routeParams = route.params as RouteParams;
   const selectedPokemon = {
     url: routeParams.url,
@@ -90,6 +92,7 @@ const AllPokemons: React.FC = () => {
         pokemon={pokemon}
         backButtonCallback={goBack}
         loading={loading}
+        theme={theme}
       />
     </Container>
   );

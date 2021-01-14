@@ -7,7 +7,7 @@ exports[`PokemonCard Rendering should match to snapshot loaded 1`] = `
   >
     <Styled(View)>
       <Styled(Component)>
-        <[object Object]
+        <SvgMock
           color="#FFF"
           height={30}
           width={30}
@@ -50,7 +50,7 @@ exports[`PokemonCard Rendering should match to snapshot loaded 1`] = `
         </Styled(View)>
         <Styled(View)>
           <Styled(View)>
-            <[object Object]
+            <SvgMock
               color="#333"
               height={28}
               width={28}
@@ -60,7 +60,7 @@ exports[`PokemonCard Rendering should match to snapshot loaded 1`] = `
             </Styled(Text)>
           </Styled(View)>
           <Styled(View)>
-            <[object Object]
+            <SvgMock
               color="#333"
               height={23}
               width={23}
@@ -200,29 +200,27 @@ exports[`PokemonCard Rendering should match to snapshot loaded 1`] = `
 `;
 
 exports[`PokemonCard Rendering should match to snapshot loading 1`] = `
-<Fragment>
-  <ActivityIndicator
-    animating={true}
-    color="red"
-    hidesWhenStopped={true}
-    size="large"
-    style={
-      Object {
-        "flex": 1,
-      }
+<ActivityIndicator
+  animating={true}
+  color="red"
+  hidesWhenStopped={true}
+  size="large"
+  style={
+    Object {
+      "flex": 1,
     }
-  />
-</Fragment>
+  }
+/>
 `;
 
 exports[`PokemonCard Rendering should match to snapshot with Pokemon without a type 1`] = `
 <Fragment>
   <Styled(View)
-    color="#5DBE62"
+    color="#f00"
   >
     <Styled(View)>
       <Styled(Component)>
-        <[object Object]
+        <SvgMock
           color="#FFF"
           height={30}
           width={30}
@@ -265,7 +263,7 @@ exports[`PokemonCard Rendering should match to snapshot with Pokemon without a t
         </Styled(View)>
         <Styled(View)>
           <Styled(View)>
-            <[object Object]
+            <SvgMock
               color="#333"
               height={28}
               width={28}
@@ -275,7 +273,7 @@ exports[`PokemonCard Rendering should match to snapshot with Pokemon without a t
             </Styled(Text)>
           </Styled(View)>
           <Styled(View)>
-            <[object Object]
+            <SvgMock
               color="#333"
               height={23}
               width={23}
@@ -291,24 +289,7 @@ exports[`PokemonCard Rendering should match to snapshot with Pokemon without a t
           </Styled(Text)>
         </Styled(View)>
         <TypeSection
-          types={
-            Array [
-              Object {
-                "slot": 1,
-                "type": Object {
-                  "name": "grass",
-                  "url": "https://pokeapi.co/api/v2/type/12/",
-                },
-              },
-              Object {
-                "slot": 2,
-                "type": Object {
-                  "name": "poison",
-                  "url": "https://pokeapi.co/api/v2/type/4/",
-                },
-              },
-            ]
-          }
+          types={Array []}
         />
         <Styled(View) />
         <Styled(Text)>
