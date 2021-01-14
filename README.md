@@ -71,7 +71,7 @@ Os componentes criados na pasta src/components possuem uma pasta /tests com as r
 
 ### `yarn test`
 
-Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de análise da cobertura de testes do código. 
+Este comando executa as rotinas de testes. Caso o snapshot do componente a ser testado já exista, o teste utilizará o snapshot existente, caso contrário criará um novo snapshot. Ao executar este comando, o Jest cria um diretório na raiz do projeto chamado ./coverage onde são armazenados os arquivos de análise da cobertura de testes do código.
 
 ### `yarn test -u`
 
@@ -80,7 +80,6 @@ Este comando executa as rotinas de testes e funcionalidades do comando anterior,
 ## Melhorias futuras
 
  - Aumentar a cobertura de testes principalmente no componente FullPageList.
- - Verificar warning ao executar o `yarn test` referente à renderização de svgs.
  - Melhorar a interface em geral.
  - Verificar qualidade da componentização do código e suas respectivas props.
  - Modificar os arquivos de testes para Typescript.
