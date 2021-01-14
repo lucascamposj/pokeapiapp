@@ -5,6 +5,7 @@ import {defaultTheme} from '../../../../theme';
 import FullPageList from '../../FullPageList';
 import 'jest-styled-components';
 
+// executes shallow with ThemeProvider as context
 export function shallowWithTheme(child) {
   return shallow(child, {
       wrappingComponent: ({ children }) => <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>,

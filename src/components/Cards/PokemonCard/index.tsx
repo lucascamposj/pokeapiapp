@@ -45,6 +45,7 @@ interface PokemonCardProps {
   theme: DefaultTheme;
 }
 
+// getPokemonFirstType gets the first type from a pokemon and returns it's color
 const getPokemonFirstType = (pokemon: Pokemon | undefined): string | null => {
   const firstType =
     pokemon?.types && pokemon.types.length > 0 ? pokemon.types[0] : null;
@@ -61,6 +62,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({
   backButtonCallback,
   theme,
 }: PokemonCardProps) => {
+  // setting headerColor based on if it's loading and if it's has a type color
   const headerColor = useMemo(() => {
     if (pokemon && !loading) {
       const color = getPokemonFirstType(pokemon);

@@ -7,6 +7,7 @@ import api from '../../services/api';
 import { Container } from './styles';
 import PokemonCard from '../../components/Cards/PokemonCard';
 
+// main pokeapi data interfaces
 export interface NamedInterface {
   name: string;
   url: string;
@@ -59,15 +60,19 @@ interface RouteParams {
   url: string;
 }
 
-const AllPokemons: React.FC = () => {
+// Screen which shows all main information about one Pokemon
+const Pokemon: React.FC = () => {
   const { goBack } = useNavigation();
   const route = useRoute();
   const theme = useTheme();
+
+  // getting selected pokemon from route params
   const routeParams = route.params as RouteParams;
   const selectedPokemon = {
     url: routeParams.url,
     name: routeParams.name,
   };
+
   const [pokemon, setPokemon] = useState<Pokemon>();
   const [loading, setLoading] = useState(true);
 
@@ -98,4 +103,4 @@ const AllPokemons: React.FC = () => {
   );
 };
 
-export default AllPokemons;
+export default Pokemon;

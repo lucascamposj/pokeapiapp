@@ -8,7 +8,10 @@ import api from '../../services/api';
 const LIMIT = 30;
 const INITIAL_URL = `/pokemon?limit=${LIMIT}`;
 
+// Screen which lists all pokemons as an inifinite scroll list
 const AllPokemons: React.FC = () => {
+  const { navigate } = useNavigation();
+
   const [pokemons, setPokemons] = useState([]);
   const [currentUrl, setCurrentUrl] = useState(INITIAL_URL);
   const [nextUrl, setNextUrl] = useState('');
@@ -28,14 +31,13 @@ const AllPokemons: React.FC = () => {
   }, [setPokemons, setNextUrl, currentUrl]);
 
   const handleUpdate = useCallback(() => {
+    // if next url exists continue loading more content, else end fetching data
     if (nextUrl) {
       setCurrentUrl(nextUrl);
     } else {
       setLoading(false);
     }
   }, [setCurrentUrl, nextUrl]);
-
-  const { navigate } = useNavigation();
 
   const navigateToPokemon = useCallback(
     (e: GestureResponderEvent, name: string, url: string) => {

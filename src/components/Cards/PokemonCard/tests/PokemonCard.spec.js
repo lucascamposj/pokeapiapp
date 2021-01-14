@@ -8,6 +8,7 @@ import 'jest-styled-components';
 import mockedPokemon from '../tests/__mocks__/mockedPokemon.json';
 import mockedPokemonWithoutType from '../tests/__mocks__/mockedPokemonWithoutType.json';
 
+// executes shallow with ThemeProvider as context
 export function shallowWithTheme(child) {
   return shallow(child, {
       wrappingComponent: ({ children }) => <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>,
